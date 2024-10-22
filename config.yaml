@@ -1,0 +1,18 @@
+# The path to the npy file that contains the embeddings of the query examples.
+query_embedding_path: data/query_examples.npy
+# The path to the npy file that contains the embeddings of the candidate examples.
+candidate_embedding_path: data/candidates.npy
+# The path to the output folder.
+output_folder: data/output
+# Sample size.
+sample_size: 100
+# The parameter that controls the tradeoff between distribution alignment and diversity.
+alpha: 0.5
+# A constant that is in the same scale as the norm of the embeddings.
+C: 5.0
+# Kernel size for KDE (kernel density estimation).
+sigma: 0.75
+# The size of the neighborhood that will be prefetched from the candidates.
+max_K: 5000
+# The size of the neighborhood used for KDE (kernel density estimation).
+kde_K: 1000
