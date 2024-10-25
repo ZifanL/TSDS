@@ -34,3 +34,17 @@ To run TSDS on your customized data, two embedding files are needed:
 - An `.npy` file that stores the embeddings of the query examples. The shape of the array should be (number of query examples, embedding dimensions)
 Change the file paths in `config.yaml`. Adjust the parameters in `config.yaml` as needed.
 The implementation uses `faiss.IndexIVFFlat` for approximate nearest neighbor search. To use a customized index, add it to `faiss_helper.py` and substitute `FaissIndexIVFFlat` in `tsds.py`.
+
+## Citation
+Please cite our paper if you find this repo helpful in your work:
+```
+@misc{liu2024tsdsdataselectiontaskspecific,
+      title={TSDS: Data Selection for Task-Specific Model Finetuning}, 
+      author={Zifan Liu and Amin Karbasi and Theodoros Rekatsinas},
+      year={2024},
+      eprint={2410.11303},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.11303}, 
+}
+```
