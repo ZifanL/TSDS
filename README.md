@@ -38,13 +38,12 @@ The implementation uses `faiss.IndexIVFFlat` for approximate nearest neighbor se
 ## Citation
 Please cite our paper if you find this repo helpful in your work:
 ```
-@misc{liu2024tsdsdataselectiontaskspecific,
-      title={TSDS: Data Selection for Task-Specific Model Finetuning}, 
-      author={Zifan Liu and Amin Karbasi and Theodoros Rekatsinas},
-      year={2024},
-      eprint={2410.11303},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2410.11303}, 
+@inproceedings{
+	liu2024tsds,
+	title={{TSDS}: Data Selection for Task-Specific Model Finetuning},
+	author={Zifan Liu and Amin Karbasi and Theodoros Rekatsinas},
+	booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+	year={2024},
+	url={https://openreview.net/forum?id=wjbTHLUSzU}
 }
 ```
